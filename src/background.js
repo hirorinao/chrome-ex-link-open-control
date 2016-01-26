@@ -1,5 +1,7 @@
 var new_tab_mode;
 
+new_tab_mode = 'foreground';
+
 chrome.tabs.onCreated.addListener(function(tab) {
   if (tab.url == 'chrome://newtab/')
     return;
